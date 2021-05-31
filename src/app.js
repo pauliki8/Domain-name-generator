@@ -14,13 +14,9 @@ function generateDomainName(pronoun, adj, noun) {
       for (let c in noun) {
         results.push(pronoun[a] + adj[b] + noun[c] + ".com");
         console.log(results);
-        document.querySelector(".domains").innerHTML = results;
       }
     }
   }
+
+  document.querySelector(".domains").innerHTML = results;
 }
-
-let results = {};
-
-let list = "<li>" + options.results.join("</li><li>") + "</li>";
-document.getElementById("list").innerHTML = list;
